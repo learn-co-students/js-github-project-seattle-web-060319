@@ -59,7 +59,7 @@ function displayRepos(username, repos, repoButton){
   let reposList = document.getElementById("repos-list")
   if (repoButton.innerText === "Show Repos"){
     repoButton.innerText = "Hide Repos"
-  for (var i = 0; i < 10; i++){
+  for (var i = 0; i < 10 && i < repos.length; i++){
       const repo = repos[i]
       console.log(repo)
       let repoName = repo.name
